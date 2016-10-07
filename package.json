@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "browserify src/index.js -t babelify -o build/app.js"
+    "build": "browserify src/index.js -t [ babelify ] -o build/app.js"
   },
   "keywords": [],
   "author": "",
