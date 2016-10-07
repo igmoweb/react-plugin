@@ -8,6 +8,7 @@ React for user interface. Useful to speed up a plugin development with React in 
 - Browserify
 - React
 - Babel
+- A very basic WordPress plugin
 
 ## Start in seconds
 
