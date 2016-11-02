@@ -22,4 +22,4 @@ React for user interface. Useful to speed up a plugin development with React in 
 - Webpack version
 - Who knows?
 
-See my blog post here: http://igmoweb.com/2016/10/07/react-browserify-babel-plugins-wordpress
+See my blog post here: https://igmoweb.com/2016/10/10/react-browserify-babel-plugins-wordpress/
