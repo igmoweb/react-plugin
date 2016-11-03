@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "browserify src/index.js -t [ babelify ] -o build/app.js"
+    "build": "gulp default",
+    "watch": "gulp watch"
   },
   "keywords": [],
   "author": "",
