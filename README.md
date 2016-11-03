@@ -14,12 +14,15 @@ React for user interface. Useful to speed up a plugin development with React in 
 
 1. Run `npm install`
 2. Run `npm run build` to generate `build/app.js` needed for the plugin.
+3. Run `npm run watch` to watch files in `src/` folder.
 
 ## Coming soon
 
-- Gulp automation tasks
-- Watchers
 - Webpack version
 - Who knows?
 
-See my blog post here: https://igmoweb.com/2016/10/10/react-browserify-babel-plugins-wordpress/
+## Blog posts
+
+First post (Browserify + Babel): https://igmoweb.com/2016/10/10/react-browserify-babel-plugins-wordpress/
+
+Second post (First + Gulp): https://igmoweb.com/2016/11/03/react-browserify-y-babel-en-plugins-de-wordpress-ii-ahora-con-gulp/
