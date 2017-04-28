@@ -1,6 +1,7 @@
 const path = require( 'path' );
 
-module.exports = {
+// Configuración común para desarrollo y producción
+var config = {
     entry: [
         './src/index.js'
     ],
@@ -8,14 +9,13 @@ module.exports = {
         filename: 'app.js',
         path: path.resolve( __dirname, 'build' )
     },
-    devtool: 'eval-source-map',
     module: {
         rules: [
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 options: {
-                    presets: ['es2015', 'react']
+                    presets: [ 'es2015', 'react' ]
                 },
                 include: [
                     path.resolve( __dirname, 'src/' )
@@ -25,12 +25,16 @@ module.exports = {
     }
 };
 
-var path = require('path');
-
-module.exports = {
-    entry: './foo.js',
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'foo.bundle.js'
+// module.exports ahora es una función que recibe la variable env
+module.exports = function( env ) {
+    var production = 'prod' === env;
+    if ( production ) {
+        config.devtool = 'source-map';
     }
+    else {
+        config.devtool = 'cheap-module-eval-source-map';
+    }
+
+    // ¡No olvidar retornar el objecto config!
+    return config;
 };
